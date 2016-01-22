@@ -1,4 +1,4 @@
-# weather
+# weather (MVC)
 
 Weather app to work with swift under iPhone & Apple Watch.
 
@@ -12,4 +12,4 @@ Remember to do first:
 
 # pod install
 
-# MVVM
+# MVC
