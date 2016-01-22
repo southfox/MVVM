@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WeatherViewModel" customModule="weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="WeatherSun" translatesAutoresizingMaskIntoConstraints="NO" id="IRQ-aN-Nvt">
+                    <rect key="frame" x="29" y="11" width="133" height="107"/>
+                    <animations/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="WindDirectionS" translatesAutoresizingMaskIntoConstraints="NO" id="D1z-Wp-Q7F">
+                    <rect key="frame" x="276" y="31" width="53" height="66"/>
+                    <animations/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="200" y="31" width="53" height="66"/>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.9 knots" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFO-vM-bAi">
+                    <rect key="frame" x="410" y="31" width="178" height="67"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="261" y="31" width="133" height="67"/>
+                    </variation>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="weatherImage" destination="IRQ-aN-Nvt" id="twq-iS-UKS"/>
+                <outlet property="windImage" destination="D1z-Wp-Q7F" id="J56-Td-7GM"/>
+                <outlet property="windSpeedLabel" destination="AFO-vM-bAi" id="gxX-WW-U8s"/>
+            </connections>
+            <point key="canvasLocation" x="304" y="35"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WeatherSun" width="60" height="60"/>
+        <image name="WindDirectionS" width="20" height="20"/>
+    </resources>
+</document>

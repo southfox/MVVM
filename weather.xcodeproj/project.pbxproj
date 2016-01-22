@@ -36,6 +36,8 @@
 		953242091BC81C75009659A7 /* WDSpotResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953241EE1BC81C75009659A7 /* WDSpotResult.swift */; settings = {ASSET_TAGS = (); }; };
 		9532420A1BC81C75009659A7 /* WDTimeWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953241EF1BC81C75009659A7 /* WDTimeWeather.swift */; settings = {ASSET_TAGS = (); }; };
 		9532420B1BC81C75009659A7 /* WDTimeWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953241EF1BC81C75009659A7 /* WDTimeWeather.swift */; settings = {ASSET_TAGS = (); }; };
+		95C175651BE9306C008C846F /* WeatherViewModel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C175641BE9306C008C846F /* WeatherViewModel.xib */; settings = {ASSET_TAGS = (); }; };
+		95C175681BE930A3008C846F /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C175671BE930A3008C846F /* WeatherViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		A129F8C41B2CA81600EBC1DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A129F8C31B2CA81600EBC1DD /* AppDelegate.swift */; };
 		A129F8C61B2CA81600EBC1DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A129F8C51B2CA81600EBC1DD /* ViewController.swift */; };
 		A129F8C91B2CA81600EBC1DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A129F8C71B2CA81600EBC1DD /* Main.storyboard */; };
@@ -115,6 +117,8 @@
 		953241ED1BC81C75009659A7 /* WDSpotOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDSpotOwner.swift; sourceTree = "<group>"; };
 		953241EE1BC81C75009659A7 /* WDSpotResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDSpotResult.swift; sourceTree = "<group>"; };
 		953241EF1BC81C75009659A7 /* WDTimeWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDTimeWeather.swift; sourceTree = "<group>"; };
+		95C175641BE9306C008C846F /* WeatherViewModel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeatherViewModel.xib; path = ViewModel/WeatherViewModel.xib; sourceTree = "<group>"; };
+		95C175671BE930A3008C846F /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		A129F8C01B2CA81600EBC1DD /* weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A129F8C31B2CA81600EBC1DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A129F8C51B2CA81600EBC1DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +225,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		95C175661BE93078008C846F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				95C175671BE930A3008C846F /* WeatherViewModel.swift */,
+				95C175641BE9306C008C846F /* WeatherViewModel.xib */,
+			);
+			name = ViewModel;
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		A129F8B71B2CA81600EBC1DD = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				95151AFF1BC82610003DC3E3 /* weather.entitlements */,
+				95C175661BE93078008C846F /* ViewModel */,
 				953241DD1BC81C75009659A7 /* Extensions */,
 				953241E01BC81C75009659A7 /* Managers */,
 				953241E81BC81C75009659A7 /* Model */,
@@ -421,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A129F8CE1B2CA81600EBC1DD /* LaunchScreen.storyboard in Resources */,
+				95C175651BE9306C008C846F /* WeatherViewModel.xib in Resources */,
 				A129F8CB1B2CA81600EBC1DD /* Assets.xcassets in Resources */,
 				A129F8C91B2CA81600EBC1DD /* Main.storyboard in Resources */,
 			);
@@ -554,6 +570,7 @@
 				953242021BC81C75009659A7 /* WDForecastResult.swift in Sources */,
 				953241F41BC81C75009659A7 /* WDLocationManager.swift in Sources */,
 				953241F21BC81C75009659A7 /* WDSpotResult+formatter.swift in Sources */,
+				95C175681BE930A3008C846F /* WeatherViewModel.swift in Sources */,
 				953241FA1BC81C75009659A7 /* WDForecastWeather.swift in Sources */,
 				9532420A1BC81C75009659A7 /* WDTimeWeather.swift in Sources */,
 				A129F8C41B2CA81600EBC1DD /* AppDelegate.swift in Sources */,

@@ -17,10 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var locationLabel: UILabel!
     
-    @IBOutlet weak var middleView: UIView!
-    @IBOutlet weak var windSpeedLabel: UILabel!
-    @IBOutlet weak var weatherImage: UIImageView!
-    @IBOutlet weak var windImage: UIImageView!
+    @IBOutlet weak var weatherViewModel: WeatherViewModel!
     
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -59,14 +56,9 @@ class ViewController: UIViewController {
     {
         if self.forecastResult != nil
         {
-            let weatherImageName = self.forecastResult.asCurrentWeatherImagename
-            let image = UIImage(named: weatherImageName)
-            self.weatherImage.image = image
-            self.windImage.image = UIImage(named: self.forecastResult.asCurrentWindDirectionImagename)
             self.temperatureLabel.text = self.forecastResult.asCurrentTemperature
             self.unitLabel.text = self.forecastResult.asCurrentUnit
             self.locationLabel.text = self.forecastResult.asCurrentLocation
-            self.windSpeedLabel.text = self.forecastResult.asCurrentWindSpeed
             self.hourLabel.text = self.forecastResult.asHourString
             
             self.showWeatherInfo()
@@ -97,7 +89,7 @@ class ViewController: UIViewController {
     {
         self.toolbarView.alpha = 0
         self.topView.alpha = 0
-        self.middleView.alpha = 0
+        self.weatherViewModel.alpha = 0
         self.bottomView.alpha = 0
     }
     
@@ -108,7 +100,7 @@ class ViewController: UIViewController {
             {
                 strongself.toolbarView.alpha = 1
                 strongself.topView.alpha = 1
-                strongself.middleView.alpha = 1
+                strongself.weatherViewModel.alpha = 1
                 strongself.bottomView.alpha = 1
             }
         }
